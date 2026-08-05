@@ -1,0 +1,4 @@
+# Esta herramienta es de uso interno. Se solicita a los buscadores no indexarla.
+# Nota: robots.txt reduce la aparicion en buscadores, pero NO hace privada la pagina.
+User-agent: *
+Disallow: /
