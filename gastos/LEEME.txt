@@ -1,0 +1,59 @@
+MANNA Gastos de Eventos — archivos para alojar en la web
+========================================================
+
+IMPORTANTE, LEE ESTO PRIMERO
+----------------------------
+Esta app NO funciona tocando index.html en la app Archivos del iPhone.
+Esa vista previa muestra la pagina pero NO ejecuta JavaScript, asi que la
+app se queda en "Abriendo MANNA Gastos" para siempre.
+
+Tiene que abrirse desde una direccion web que empiece por https://
+
+
+Contenido de esta carpeta
+-------------------------
+  index.html            La app completa (un solo archivo).
+  sw.js                 Hace que la app abra sin conexion.
+  manifest.webmanifest  Nombre, colores e instalacion en pantalla de inicio.
+
+Los tres archivos deben quedar en la MISMA carpeta. No cambies sus nombres.
+
+
+Publicar en GitHub Pages (el mismo sitio del cotizador MANNA)
+-------------------------------------------------------------
+1. Entra al repositorio donde esta el cotizador.
+2. Crea una carpeta nueva llamada  gastos
+3. Sube ahi los tres archivos de esta carpeta.
+4. Si GitHub Pages ya esta activo para ese repositorio, no hay que
+   configurar nada mas. Si no lo esta:
+      Settings -> Pages -> Branch: main -> carpeta: / (root) -> Save
+5. Espera un minuto. La direccion queda asi:
+      https://TU-USUARIO.github.io/TU-REPOSITORIO/gastos/
+
+Cualquier otro alojamiento web sirve igual (Netlify, Vercel, Cloudflare
+Pages, o un hosting propio). Solo hacen falta dos cosas:
+  - que la direccion sea https://
+  - que el servidor entregue sw.js como JavaScript (todos lo hacen)
+
+
+Instalar en el iPhone
+---------------------
+1. Abre esa direccion en Safari. Tiene que ser Safari, no Chrome.
+2. Boton Compartir -> Anadir a pantalla de inicio.
+3. Abre la app desde ese icono.
+
+Desde ese momento funciona sin conexion y guarda los datos en el telefono.
+
+
+Como saber que esta pasando si no abre
+--------------------------------------
+Mira el texto pequeno debajo de "Abriendo MANNA Gastos":
+
+  "cargando el programa..."        -> JavaScript NO se esta ejecutando.
+                                      Estas en una vista previa, no en Safari.
+
+  "comprobando el navegador..."    -> JavaScript si corre. Espera 12 segundos
+  o cualquier otra fase               y saldra una pantalla explicando el
+                                      problema, con boton "Copiar detalles".
+
+Esa pantalla nunca borra datos ni recibos.

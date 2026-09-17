@@ -1,0 +1,12 @@
+{
+  "name": "MANNA Gastos de Eventos",
+  "short_name": "MANNA Gastos",
+  "description": "Gastos, recibos, ventas y resultados de cada evento o market de MANNA.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FAF6F0",
+  "theme_color": "#4A342A",
+  "lang": "es"
+}
